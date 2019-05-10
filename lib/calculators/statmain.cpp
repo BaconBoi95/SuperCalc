@@ -10,7 +10,7 @@ void statisticalcalc() {
     int input2;
     statlist stats(oof);
     while(1==1) {
-        cout << "[1] Append" << endl << "[2] Show List" << endl << "[3] Get Medain" << endl;
+        cout << "[1] Append" << endl << "[2] Show List" << endl << "[3] Get Medain" << endl << "[4] Get Mean" << endl;
         cout << "$ ";
         cin >> input2;
         if(input2==1) {
@@ -25,6 +25,12 @@ void statisticalcalc() {
         }
         else if(input2==3) {
             cout << stats.getmedain();
+        }
+        else if(input2==4) {
+            cout << stats.getmean();
+        }
+        else if(input2==5) {
+            cout << stats.getmode();
         }
         input2=NULL;
     };
